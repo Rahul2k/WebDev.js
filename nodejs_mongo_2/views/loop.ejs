@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    <form method="post" name="subform">
+    <table name="marksheet">
+        <tr>
+            <td>S.No.</td>
+            <td>Name</td>
+            <td>maths</td>
+            <td>english</td>
+            <td>hindi</td>
+        </tr>
+       <% for(var i = 0 ; i< student.length; i++) { %>
+        <tr>
+            <td><%=i+1 %></td>
+        <% for(var j=0; j< student[i].length; j++) { %>
+            <td><%=student[i][j] %></td>
+        <% } %>
+        <% } %>
+        </tr>
+    </table>
+        
+    <button type="submit">submit</button>
+    </form>
+    
+    </body>
+</html>

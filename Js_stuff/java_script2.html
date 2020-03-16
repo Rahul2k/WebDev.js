@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <input id="input">
+        <button onclick="odd_even();">Click here</button>
+        <h4 id="output">  </h4>
+        <button onclick="count();">counter</button>
+        <h5 id="counter"> </h5>
+    </body>
+    <script>
+        function odd_even(){
+            if((document.getElementById("input").value)%2==0) {document.getElementById("output").innerHTML="even"}
+            else {document.getElementById("output").innerHTML="odd"}
+        }
+        function count(){
+            var i=3
+            i=i+2
+            document.getElementById("counter").innerHTML=i
+        }
+    </script>
+</html>

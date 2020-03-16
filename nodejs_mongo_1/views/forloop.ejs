@@ -1,0 +1,23 @@
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+        <table border="1">
+            <tr>
+                <td>S No.</td>
+                <td>Name</td>
+            </tr>
+            <% for(var i = 0; i < users.length; i++) { %>
+            <tr>
+                <td><%=i+1 %></td>
+                <td><%=users[i] %></td>
+            </tr>
+            <% }%>
+        </table>
+
+    </body>
+
+</html>
